@@ -29,8 +29,6 @@ namespace WpfApp1
         // вход с ролью
         private void Loginbtm_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
 
             string login = logintxt.Text;
             string password = passwordtxt.Password;
@@ -38,18 +36,14 @@ namespace WpfApp1
             if (user != null)
                 new MainWindow(user.Role.RoleName, user.FirstName, user.SecondName, user.LastName).Show();
             {
-              
+
                 this.Close();
             }
-            }
-            catch
-            {
-                MessageBox.Show("Неверный логин или пароль");
-            }
 
 
 
-            
+
+
         }
 
         private void Goustbtm_Click(object sender, RoutedEventArgs e)

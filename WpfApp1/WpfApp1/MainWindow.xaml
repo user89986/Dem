@@ -18,8 +18,10 @@
 
 
         </Grid>
-        <Grid x:Name="Admingrd" Margin="418,0,0,358" Visibility="Hidden">
+        <Grid x:Name="Admingrd" Margin="418,0,0,358" Cursor="">
             <Button Content="Добавить" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="126" Background="Chartreuse" Click="Button_Click"/>
+            <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Margin="252,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox1_TextChanged"/>
+            <TextBlock HorizontalAlignment="Left" Margin="197,16,0,0" TextWrapping="Wrap" Text="Поиск:" VerticalAlignment="Top"/>
 
         </Grid>
         <Grid Margin="0,81,0,0">
